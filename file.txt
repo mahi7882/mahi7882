@@ -1,0 +1,106 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background */
+    transition: background-color 0.5s; /* Add transition to background color */
+  }
+  
+  header {
+    background-color: #333; /* Dark gray header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s; /* Add transition to background color */
+  }
+  
+  footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+    clear: both; /* Clear floats */
+    transition: background-color 0.5s; /* Add transition to background color */
+  }
+  
+  /* Social Work Section */
+  
+  .social-work {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    transition: background-color 0.5s; /* Add transition to background color */
+  }
+  
+  .social-work h2 {
+    color: #00698f; /* Blue title */
+    transition: color 0.5s; /* Add transition to title color */
+  }
+  
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .work-item {
+    background-color: #fff; /* White background */
+    margin: 20px;
+    padding: 20px;
+    width: 250px; /* Adjust width as needed */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.5s, box-shadow 0.5s; /* Add transition to background color and box shadow */
+  }
+  
+  .work-item:hover {
+    background-color: #f7f7f7; /* Light gray background on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .work-item h3 {
+    color: #333; /* Dark gray title */
+    transition: color 0.5s; /* Add transition to title color */
+  }
+  
+  .work-item p {
+    color: #666; /* Medium gray text */
+    transition: color 0.5s; /* Add transition to text color */
+  }
+  
+  /* Add some animation to the work items */
+  
+  .work-item {
+    animation: fade-in 1s; /* Add fade-in animation */
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Add responsiveness */
+  
+  @media (max-width: 768px) {
+    .work-item {
+      width: 100%; /* Make work items full-width on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-work h2 {
+      font-size: 18px; /* Reduce title font size on small screens */
+    }
+    .work-item h3 {
+      font-size: 16px; /* Reduce title font size on small screens */
+    }
+    .work-item p {
+      font-size: 14px; /* Reduce text font size on small screens */
+    }
+  }

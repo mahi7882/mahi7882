@@ -1,0 +1,129 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Header styles */
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Section styles */
+.social-work {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+/* Section heading styles */
+.social-work h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0056b3;
+  animation: slideInDown 1s ease; /* Slide-in animation */
+}
+
+/* Paragraph styles */
+.social-work p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Work list styles */
+.work-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Work item styles */
+.work-item {
+  width: calc(33.33% - 2rem);
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Work item image styles */
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Work item title styles */
+.work-item h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #0056b3;
+  text-align: center;
+}
+
+/* Work item description styles */
+.work-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0056b3;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  animation: slideInUp 1s ease; /* Slide-in animation */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .work-item {
+      width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .work-item {
+      width: calc(100% - 2rem);
+  }
+}
